@@ -11,9 +11,9 @@ class ViagemEspacialGame {
         this.correctAnswers = 0;
 
         this.narratives = [
-            { text: "Vocês são jovens cadetes da Academia Estelar, enviados para explorar o planeta Marte.", img: "viagem-espacial/viagem-espacial/assets///imagens/narrativa-1.png" },
-            { text: "Durante a viagem, um campo magnético misterioso desvia a nave, deixando a tripulação presa em uma enorme nebulosa.", img: "viagem-espacial/viagem-espacial/assets///imagens/narrativa-2.png" },
-            { text: "Agora vocês têm que encarar altos desafios para consertar a nave, escapar da nebulosa e continuar a missão.", img: "viagem-espacial/viagem-espacial/assets///imagens/narrativa-3.png" }
+            { text: "Vocês são jovens cadetes da Academia Estelar, enviados para explorar o planeta Marte.", img: "viagem-espacial/viagem-espacial/assets///imagens/narrativa-1.jpg" },
+            { text: "Durante a viagem, um campo magnético misterioso desvia a nave, deixando a tripulação presa em uma enorme nebulosa.", img: "viagem-espacial/viagem-espacial/assets///imagens/narrativa-2.jpg" },
+            { text: "Agora vocês têm que encarar altos desafios para consertar a nave, escapar da nebulosa e continuar a missão.", img: "viagem-espacial/viagem-espacial/assets///imagens/narrativa-3.jpg" }
         ];
 
         this.level1Questions = [
@@ -376,7 +376,7 @@ class ViagemEspacialGame {
 
         if (this.currentLevel === 1) {
             const narrativa = success ? "narrativa-4" : "narrativa-4";
-            const img = success ? "nivel1-vitoria.png" : "nivel1-derrota.png";
+            const img = success ? "nivel1-vitoria.jpg" : "nivel1-derrota.jpg";
             const msg = success ? 
                 "Vocês conseguiram! As luzes da nave voltaram a se acender!" :
                 "Vocês fracassaram, é preciso escalar outra equipe para tentar fazer o trabalho.";
@@ -395,7 +395,7 @@ class ViagemEspacialGame {
                 </div>
             `;
         } else if (this.currentLevel === 2) {
-            const img = success ? "nivel2-vitoria.png" : "nivel2-derrota.png";
+            const img = success ? "nivel2-vitoria.jpg" : "nivel2-derrota.jpg";
             const msg = success ? 
                 "O mapa foi reconstruído, agora vocês já podem se orientar!" :
                 "Vocês fracassaram, é preciso escalar outra equipe para tentar fazer o trabalho.";
@@ -414,7 +414,7 @@ class ViagemEspacialGame {
                 </div>
             `;
         } else if (this.currentLevel === 3) {
-            const img = success ? "nivel3-vitoria.png" : "nivel3-derrota.png";
+            const img = success ? "nivel3-vitoria.jpg" : "nivel3-derrota.jpg";
             const msg = success ? 
                 "Vocês conseguiram! O tanque está cheio e já podem avançar!" :
                 "Vocês fracassaram, é preciso escalar outra equipe para tentar fazer o trabalho.";
@@ -494,7 +494,7 @@ class ViagemEspacialGame {
         result.innerHTML = `
             <div class="result-layout">
                 <div class="result-image">
-                    <img src="viagem-espacial/viagem-espacial/assets///imagens/vitoria-final.png" alt="Vitória Final">
+                    <img src="viagem-espacial/viagem-espacial/assets///imagens/vitoria-final.jpg" alt="Vitória Final">
                 </div>
                 <div class="result-text">
                     <h2>MISSÃO CUMPRIDA!</h2>
@@ -512,7 +512,7 @@ class ViagemEspacialGame {
         result.innerHTML = `
             <div class="result-layout">
                 <div class="result-image">
-                    <img src="viagem-espacial/assets//imagens/derrota-final.png" alt="Derrota Final">
+                    <img src="viagem-espacial/assets//imagens/derrota-final.jpg" alt="Derrota Final">
                 </div>
                 <div class="result-text">
                     <h2>PORTAL TRANCADO!</h2>
