@@ -11,9 +11,9 @@ class ViagemEspacialGame {
         this.correctAnswers = 0;
 
         this.narratives = [
-            { text: "Vocês são jovens cadetes da Academia Estelar, enviados para explorar o planeta Marte.", img: "viagem-espacial/viagem-espacial/assets///imagens/narrativa-1.jpg" },
-            { text: "Durante a viagem, um campo magnético misterioso desvia a nave, deixando a tripulação presa em uma enorme nebulosa.", img: "viagem-espacial/viagem-espacial/assets///imagens/narrativa-2.jpg" },
-            { text: "Agora vocês têm que encarar altos desafios para consertar a nave, escapar da nebulosa e continuar a missão.", img: "viagem-espacial/viagem-espacial/assets///imagens/narrativa-3.jpg" }
+            { text: "Vocês são jovens cadetes da Academia Estelar, enviados para explorar o planeta Marte.", img: "viagem-espacial/viagem-espacialhttps://raw.githubusercontent.com/edneiaangelicagomes/viagem-espacial/master/assets///imagens/narrativa-1.jpg" },
+            { text: "Durante a viagem, um campo magnético misterioso desvia a nave, deixando a tripulação presa em uma enorme nebulosa.", img: "viagem-espacial/viagem-espacialhttps://raw.githubusercontent.com/edneiaangelicagomes/viagem-espacial/master/assets///imagens/narrativa-2.jpg" },
+            { text: "Agora vocês têm que encarar altos desafios para consertar a nave, escapar da nebulosa e continuar a missão.", img: "viagem-espacial/viagem-espacialhttps://raw.githubusercontent.com/edneiaangelicagomes/viagem-espacial/master/assets///imagens/narrativa-3.jpg" }
         ];
 
         this.level1Questions = [
@@ -134,12 +134,12 @@ class ViagemEspacialGame {
 
     playSound(filename) {
         if (!this.soundEnabled) return;
-        const audio = new Audio(`viagem-espacial/viagem-espacial/assets///sons/${filename}`);
+        const audio = new Audio(`viagem-espacial/viagem-espacialhttps://raw.githubusercontent.com/edneiaangelicagomes/viagem-espacial/master/assets///sons/${filename}`);
         audio.play().catch(err => console.log('Erro ao reproduzir som:', err));
     }
 
     startBackgroundMusic() {
-        const music = new Audio('viagem-espacial/viagem-espacial/assets///sons/musica.mp3');
+        const music = new Audio('viagem-espacial/viagem-espacialhttps://raw.githubusercontent.com/edneiaangelicagomes/viagem-espacial/master/assets///sons/musica.mp3');
         music.loop = true;
         music.volume = 0.3;
         if (this.soundEnabled) {
@@ -386,7 +386,7 @@ class ViagemEspacialGame {
             result.innerHTML = `
                 <div class="result-layout">
                     <div class="result-image">
-                        <img src="viagem-espacial/viagem-espacial/assets///imagens/${img}" alt="Resultado">
+                        <img src="viagem-espacial/viagem-espacialhttps://raw.githubusercontent.com/edneiaangelicagomes/viagem-espacial/master/assets///imagens/${img}" alt="Resultado">
                     </div>
                     <div class="result-text">
                         <h2>${msg}</h2>
@@ -405,7 +405,7 @@ class ViagemEspacialGame {
             result.innerHTML = `
                 <div class="result-layout">
                     <div class="result-image">
-                        <img src="viagem-espacial/viagem-espacial/assets///imagens/${img}" alt="Resultado">
+                        <img src="viagem-espacial/viagem-espacialhttps://raw.githubusercontent.com/edneiaangelicagomes/viagem-espacial/master/assets///imagens/${img}" alt="Resultado">
                     </div>
                     <div class="result-text">
                         <h2>${msg}</h2>
@@ -424,7 +424,7 @@ class ViagemEspacialGame {
             result.innerHTML = `
                 <div class="result-layout">
                     <div class="result-image">
-                        <img src="viagem-espacial/viagem-espacial/assets///imagens/${img}" alt="Resultado">
+                        <img src="viagem-espacial/viagem-espacialhttps://raw.githubusercontent.com/edneiaangelicagomes/viagem-espacial/master/assets///imagens/${img}" alt="Resultado">
                     </div>
                     <div class="result-text">
                         <h2>${msg}</h2>
@@ -494,7 +494,7 @@ class ViagemEspacialGame {
         result.innerHTML = `
             <div class="result-layout">
                 <div class="result-image">
-                    <img src="viagem-espacial/viagem-espacial/assets///imagens/vitoria-final.jpg" alt="Vitória Final">
+                    <img src="viagem-espacial/viagem-espacialhttps://raw.githubusercontent.com/edneiaangelicagomes/viagem-espacial/master/assets///imagens/vitoria-final.jpg" alt="Vitória Final">
                 </div>
                 <div class="result-text">
                     <h2>MISSÃO CUMPRIDA!</h2>
@@ -512,7 +512,7 @@ class ViagemEspacialGame {
         result.innerHTML = `
             <div class="result-layout">
                 <div class="result-image">
-                    <img src="viagem-espacial/assets//imagens/derrota-final.jpg" alt="Derrota Final">
+                    <img src="viagem-espacialhttps://raw.githubusercontent.com/edneiaangelicagomes/viagem-espacial/master/assets//imagens/derrota-final.jpg" alt="Derrota Final">
                 </div>
                 <div class="result-text">
                     <h2>PORTAL TRANCADO!</h2>
